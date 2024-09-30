@@ -1,0 +1,38 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="w-100" style="max-width: 400px;">
+            <h1 class="text-center mb-4 fw-bold" style="color: #007bff; font-size: 2.5rem;">Sign-up</h1>
+            <form method="post" action="/register">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        name="username">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        name="email">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                </div>
+                <div class="d-flex">
+                    <div class="mb-3 form-check me-3">
+                        <input type="radio" class="form-check-input" name="role" id="registerAsSeller" value="seller">
+                        <label class="form-check-label" for="registerAsSeller">Register as Seller</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="radio" class="form-check-input" name="role" id="registerAsBuyer" value="buyer">
+                        <label class="form-check-label" for="registerAsBuyer">Register as Buyer</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Sign-up</button>
+                <p class="mt-2">Already have an account, <a href="/logout">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    </div> 
